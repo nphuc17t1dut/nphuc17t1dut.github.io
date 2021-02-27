@@ -1,0 +1,27 @@
+#date{
+ color:#B1C68C;   
+}
+h2{
+    font-size: 18px;
+    color:#747474;
+}
+.title{
+    font-size: 36px;
+    color:#747474;
+}
+#container{
+    margin-right:400px;
+    margin-left:300px;
+    padding:10px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body{
+    background-color:#CCC;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+#content{
+    margin-left:20px;
+    
+}
