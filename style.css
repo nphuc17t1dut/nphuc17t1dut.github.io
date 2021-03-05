@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+}
+.introduction{
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://i.redd.it/tn0k20exrnb51.jpg");
+    background-position: center;
+}
+.intro-text{
+    font-weight: lighter;
+    line-height: 0;
+}
+.logo{
+    width: 80px;
+    height: 30px;
+    margin-bottom: 60px;
+}
+.introduction .download-button{
+    width: 150px;
+    height: 40px;
+    background-color: #F25454;
+    color: whitesmoke;
+    border-radius: 6px;
+    border-color: #F25454;
+    cursor: pointer;
+    font-weight:lighter;
+}
+.introduction .available-note{
+    opacity: 0.8;
+    margin-top:-5px;
+    margin-bottom: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .content-intro{
+    font-weight: lighter;
+    opacity: 0.7;
+}
+hr{
+    width: 10%;
+    border: 0.5px solid #F25454;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lower-line{
+    opacity: 0.5;
+}
+.content .content-container{
+    display:flex;
+    justify-content: center;
+}   
+.info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h3{
+    color: #F25454;
+    opacity: 0.7;
+}
