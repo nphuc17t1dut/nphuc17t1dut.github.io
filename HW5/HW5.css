@@ -1,0 +1,188 @@
+body{
+    background-color: #2F3238;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/******************* BUBBA ****************************/
+.bubba{
+    position: relative;
+}
+.bubba .text{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.bubba:hover .text{
+    top:50%;
+}
+
+.bubba .text h2,span{
+    
+    color:white;
+    font-size: 30;
+}
+
+.bubba .text h2{
+    font-weight: lighter;
+}
+.bubba .text span{
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #9e5406;
+  }
+.bubba img{
+    opacity:1;
+}
+.bubba:hover .overlay{
+    opacity: 0.5;
+}
+.bubba h3{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    color:white;
+    font-weight: lighter;
+    opacity: 0;
+    transition: 0.5s;
+    white-space: nowrap;
+    font-size:14;
+}
+.bubba:hover h3{
+    opacity:1;
+    top:55%;
+}
+
+.bubba .top-bottom-border{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height:90%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    opacity: 0;
+    transition: .4s;
+}
+.bubba .left-right-border{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height:30%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    opacity: 0;
+    transition: .4s;
+}
+.bubba:hover .top-bottom-border{
+    opacity:1;
+    width:90%
+}
+.bubba:hover .left-right-border{
+    opacity:1;
+    height:91%;
+    
+}
+
+
+/******************* DEXTER ****************************/
+.dexter{
+    position: relative;
+    height: 360px;
+    width: 480px;
+}
+.dexter img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.dexter .box{
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height:35%;
+    border:5px solid white;
+    transition: 0.5s ease;
+}
+.dexter .dexter-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+}
+.dexter .dexter-text{
+    position:absolute;
+    top:20;
+    left:40;
+}
+
+.dexter .dexter-text h2{
+    font-size:30;
+    color:white;
+    font-weight: lighter;
+}
+.dexter .dexter-text span{
+    font-weight: bold;
+}
+.dexter h3{
+    top:50%;
+    left:40;
+    position: absolute;
+    font-size: 14;
+    color:white;
+    font-weight: lighter;
+    text-align: left;
+    width: 70%;
+    opacity:0;
+    transition: 0.5s;
+} 
+.dexter:hover .dexter-overlay{
+    opacity: 0.5; 
+}
+.dexter:hover .box{
+    top:55%;
+}
+.dexter:hover h3{
+    top:75%;
+    opacity:1;
+}
