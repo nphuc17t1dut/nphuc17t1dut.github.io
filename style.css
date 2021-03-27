@@ -1,188 +1,264 @@
-body{
-    background-color: #2F3238;
+body {
     margin:0;
     font-family: 'Raleway', sans-serif;
+    
 }
-.container{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.header .header-nav {
+    background-color: #424242;
+    height: 40px;
+}
+.header .header-nav i {
+    font-size: 16px;
+    margin-top:8px;
+    margin-left:8px;
+    color:gray;
+}
+.header .header-info {
+    display:flex;
+    flex-direction: column;
     align-items: center;
-}
-
-
-
-/******************* BUBBA ****************************/
-.bubba{
+    color:white;
+    background-color: #505050;
+    height: 200px;
     position: relative;
 }
-.bubba .text{
-    position:absolute;
-    top:45%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    transition: .5s;
+.header .header-info h3 {
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
-.bubba:hover .text{
-    top:50%;
-}
-
-.bubba .text h2,span{
-    
-    color:white;
-    font-size: 30;
-}
-
-.bubba .text h2{
+.header .header-info h4 {
     font-weight: lighter;
-}
-.bubba .text span{
-    font-weight: bold;
+    margin-top:5px;
+    margin-bottom: 20px;
+    
 }
 
-.overlay {
+
+
+.header .header-info img {
+    border: 5px solid white;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,0);
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #9e5406;
-  }
-.bubba img{
-    opacity:1;
 }
-.bubba:hover .overlay{
+/***********************************************************************************/
+/******************************** CONTAINER ***************************************/
+.container {
+    background-color: #fdf9f9;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container .info {
+    height:30%;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    margin-top: 5px;
+    border-color:#C0C0C0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container .info .set-of-icon i {
+    
+    margin-top:140px;
+    margin-left: 10px;
+    margin-right:10px;
     opacity: 0.5;
 }
-.bubba h3{
-    position:absolute;
-    top:60%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    
-    color:white;
-    font-weight: lighter;
-    opacity: 0;
-    transition: 0.5s;
-    white-space: nowrap;
-    font-size:14;
-}
-.bubba:hover h3{
-    opacity:1;
-    top:55%;
-}
-
-.bubba .top-bottom-border{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width: 30%;
-    height:90%;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    opacity: 0;
-    transition: .4s;
-}
-.bubba .left-right-border{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width: 90%;
-    height:30%;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    opacity: 0;
-    transition: .4s;
-}
-.bubba:hover .top-bottom-border{
-    opacity:1;
-    width:90%
-}
-.bubba:hover .left-right-border{
-    opacity:1;
-    height:91%;
-    
-}
-
-
-/******************* DEXTER ****************************/
-.dexter{
-    position: relative;
-    height: 360px;
-    width: 480px;
-}
-.dexter img{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-}
-.dexter .box{
-    position:absolute;
-    top: 5%;
-    left: 5%;
+.container .info .introduction {
     width: 80%;
-    height:35%;
-    border:5px solid white;
-    transition: 0.5s ease;
 }
-.dexter .dexter-overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background: linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
-    background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+.container .info .set-of-button {
+    margin-bottom: 50px;
 }
-.dexter .dexter-text{
-    position:absolute;
-    top:20;
-    left:40;
+.container .info .set-of-button button {
+    border-radius: 5px;
+    width: 150px;
+    height:30px;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.24);
+    background-color: #8e7f7f;
+    color:#e2d5d5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 
-.dexter .dexter-text h2{
-    font-size:30;
-    color:white;
-    font-weight: lighter;
+.container .experience {
+    height:800px;
+    width:80%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5%;
 }
-.dexter .dexter-text span{
-    font-weight: bold;
-}
-.dexter h3{
-    top:50%;
-    left:40;
+
+.container .experience .line {
     position: absolute;
-    font-size: 14;
-    color:white;
-    font-weight: lighter;
-    text-align: left;
-    width: 70%;
-    opacity:0;
-    transition: 0.5s;
-} 
-.dexter:hover .dexter-overlay{
-    opacity: 0.5; 
+    height: 80%;
+    width: 3px;
+    background-color: #8e7f7f;
+    top : 20%;
 }
-.dexter:hover .box{
-    top:55%;
+.container .experience .timeline .section::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    
+    background-color: #8e7f7f;
+    top:-5%;
+    left :122%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .container .experience .timeline .section-odd::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right:122%;
+    top:-5%;
+    background-color: #8e7f7f;
+    border-radius: 50%;
+    z-index: 1;
+  }
+.container .experience h1 {
+    opacity: 0.5;
+    margin-top:100px;
+    
 }
-.dexter:hover h3{
-    top:75%;
-    opacity:1;
+
+.container .experience .timeline {
+    width :100%;
+    height :100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.container .experience .timeline .section {
+    border: 1px solid black;
+    height: 80%;
+    width: 80%;
+    
+}
+.container .experience .timeline .section-odd {
+    border: 1px solid black;
+    height: 80%;
+    width: 80%;
+    justify-self: end;
+    align-self:end;
+}
+.container .experience .timeline .section,.section-odd {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.container .experience .timeline .section::after {
+	content: '';
+	position: absolute;
+	right: 0;
+    top: 7%;   
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-left-color: #424242;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -19px;
+	margin-right: -36px;
+}
+.container .experience .timeline .section-odd::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top:7%;
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-right-color: #424242;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -19px;
+	margin-left: -36px;
+}
+
+.container .experience .timeline .section .postion {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: #424242;
+    margin:0;
+}
+.container .experience .timeline .section .postion h4 {
+    color :white;
+    margin-left: 2%;
+    margin-top:15px;
+}
+.container .experience .timeline .section .section-info {
+    height:80%;
+    width:100%;
+}
+
+.container .experience .timeline .section-odd .postion {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: #424242;
+}
+.container .experience .timeline .section-odd .postion h4 {
+    color :white;
+    margin-left: 2%;
+    margin-top:15px;
+}
+.container .experience .timeline .section-odd .section-info {
+    height:80%;
+    width:100%;
+}
+
+.container .skill {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.container .skill h1 {
+    align-self: center;
+    opacity: 0.5;
+    margin-top:100px;
+}
+
+.container .skill .detail {
+    
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px;
+    column-gap: 5%;
+}
+.container .skill .detail .Professional,.Personal,.Language {
+    background-color: #424242;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 16% 16% 16% 16% 16%;
+}
+
+.container .skill .detail h2 {
+    color :white;
+    justify-self: center;
+    align-self: center; 
 }
