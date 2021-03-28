@@ -1,107 +1,115 @@
 body {
-    margin:0;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
-    
 }
+
 .header .header-nav {
     background-color: #424242;
     height: 40px;
 }
+
 .header .header-nav i {
     font-size: 16px;
-    margin-top:8px;
-    margin-left:8px;
-    color:gray;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: gray;
 }
+
 .header .header-info {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    color:white;
+    color: white;
     background-color: #505050;
     height: 200px;
     position: relative;
 }
+
 .header .header-info h3 {
     margin-top: 5px;
     font-size: 30px;
     margin-bottom: 5px;
 }
+
 .header .header-info h4 {
     font-weight: lighter;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 20px;
-    
 }
-
-
 
 .header .header-info img {
     border: 5px solid white;
     box-shadow: 0 0 10px #000000;
     border-radius: 50%;
-    height:200px;
-    width:200px;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,0);
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
     position: absolute;
 }
+
+
 /***********************************************************************************/
+
+
 /******************************** CONTAINER ***************************************/
+
 .container {
     background-color: #fdf9f9;
-    height:auto;
-    display:flex;
+    height: auto;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .container .info {
-    height:30%;
+    height: 30%;
     width: 80%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align:center;
+    text-align: center;
     margin-top: 5px;
-    border-color:#C0C0C0;
+    border-color: #C0C0C0;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .container .info .set-of-icon i {
-    
-    margin-top:140px;
+    margin-top: 140px;
     margin-left: 10px;
-    margin-right:10px;
+    margin-right: 10px;
     opacity: 0.5;
 }
+
 .container .info .introduction {
     width: 80%;
 }
+
 .container .info .set-of-button {
     margin-bottom: 50px;
 }
+
 .container .info .set-of-button button {
     border-radius: 5px;
     width: 150px;
-    height:30px;
+    height: 30px;
     cursor: pointer;
     border-color: rgba(0, 0, 0, 0.24);
     background-color: #8e7f7f;
-    color:#e2d5d5;
+    color: #e2d5d5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-left: 10px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 .container .experience {
-    height:800px;
-    width:80%;
-    display : flex;
+    height: 800px;
+    width: 80%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -113,89 +121,95 @@ body {
     height: 80%;
     width: 3px;
     background-color: #8e7f7f;
-    top : 20%;
+    top: 20%;
 }
+
 .container .experience .timeline .section::before {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    
     background-color: #8e7f7f;
-    top:-5%;
-    left :122%;
+    top: -5%;
+    left: 122%;
     border-radius: 50%;
     z-index: 1;
-  }
-  .container .experience .timeline .section-odd::after {
+}
+
+.container .experience .timeline .section-odd::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    right:122%;
-    top:-5%;
+    right: 122%;
+    top: -5%;
     background-color: #8e7f7f;
     border-radius: 50%;
     z-index: 1;
-  }
+}
+
 .container .experience h1 {
     opacity: 0.5;
-    margin-top:100px;
-    
+    margin-top: 100px;
 }
 
 .container .experience .timeline {
-    width :100%;
-    height :100%;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
+
 .container .experience .timeline .section {
     border: 1px solid black;
     height: 80%;
     width: 80%;
-    
 }
+
 .container .experience .timeline .section-odd {
     border: 1px solid black;
     height: 80%;
     width: 80%;
     justify-self: end;
-    align-self:end;
+    align-self: end;
 }
-.container .experience .timeline .section,.section-odd {
-    display:flex;
+
+.container .experience .timeline .section,
+.section-odd {
+    display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .container .experience .timeline .section::after {
-	content: '';
-	position: absolute;
-	right: 0;
-    top: 7%;   
-	width: 0;
-	height: 0;
-	border: 36px solid transparent;
-	border-left-color: #424242;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -19px;
-	margin-right: -36px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 7%;
+    width: 0;
+    height: 0;
+    border: 36px solid transparent;
+    border-left-color: #424242;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -19px;
+    margin-right: -36px;
 }
-.container .experience .timeline .section-odd::before{
-	content: '';
-	position: absolute;
-	left: 0;
-	top:7%;
-	width: 0;
-	height: 0;
-	border: 36px solid transparent;
-	border-right-color: #424242;
-	border-left: 0;
-	border-top: 0;
-	margin-top: -19px;
-	margin-left: -36px;
+
+.container .experience .timeline .section-odd::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7%;
+    width: 0;
+    height: 0;
+    border: 36px solid transparent;
+    border-right-color: #424242;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -19px;
+    margin-left: -36px;
 }
 
 .container .experience .timeline .section .postion {
@@ -203,16 +217,19 @@ body {
     width: 100%;
     border-bottom: 1px solid black;
     background-color: #424242;
-    margin:0;
+    margin: 0;
 }
+
 .container .experience .timeline .section .postion h4 {
-    color :white;
+    color: white;
     margin-left: 2%;
-    margin-top:15px;
+    margin-top: 15px;
+    opacity: 0.8;
 }
+
 .container .experience .timeline .section .section-info {
-    height:80%;
-    width:100%;
+    height: 80%;
+    width: 100%;
 }
 
 .container .experience .timeline .section-odd .postion {
@@ -221,15 +238,33 @@ body {
     border-bottom: 1px solid black;
     background-color: #424242;
 }
+
 .container .experience .timeline .section-odd .postion h4 {
-    color :white;
+    color: white;
     margin-left: 2%;
-    margin-top:15px;
+    margin-top: 15px;
+    opacity: 0.8;
 }
+
 .container .experience .timeline .section-odd .section-info {
-    height:80%;
-    width:100%;
+    height: 80%;
+    width: 100%;
 }
+
+.container .experience .timeline .section .section-info h5,
+p {
+    margin: 15px;
+    opacity: 0.8;
+}
+
+.container .experience .timeline .section-odd .section-info h5,
+p {
+    margin: 15px;
+    opacity: 0.8;
+}
+
+
+/*************SKILL***********************/
 
 .container .skill {
     height: 30%;
@@ -237,28 +272,289 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .container .skill h1 {
     align-self: center;
     opacity: 0.5;
-    margin-top:100px;
+    margin-top: 50px;
 }
 
 .container .skill .detail {
-    
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 500px;
     column-gap: 5%;
 }
-.container .skill .detail .Professional,.Personal,.Language {
+
+.container .skill .detail .Professional,
+.Personal,
+.Language {
     background-color: #424242;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 16% 16% 16% 16% 16%;
+    grid-template-rows: 20% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
 }
 
 .container .skill .detail h2 {
-    color :white;
+    color: white;
     justify-self: center;
-    align-self: center; 
+    align-self: center;
+}
+
+.container .skill .detail .Professional .skill-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .skill .detail .Professional .skill-info span {
+    color: white;
+    margin: 10px;
+}
+
+.container .skill .detail .Professional .progress {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 95%;
+    height: 30px;
+    margin-left: 4%;
+}
+
+.container .skill .detail .Professional .progress-value-ui {
+    animation: load-ui 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-ui {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.container .skill .detail .Professional .progress-value-PHP {
+    animation: load-php 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-php {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.container .skill .detail .Professional .progress-value-android {
+    animation: load-android 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-android {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.container .skill .detail .Professional .progress-value-ios {
+    animation: load-ios 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-ios {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.container .skill .detail .Professional .progress-value-office {
+    animation: load-office 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-office {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.container .skill .detail .Personal .personal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .skill .detail .Personal .personal-info span {
+    color: white;
+    margin: 10px;
+}
+
+.container .skill .detail .Personal .progress {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 95%;
+    height: 30px;
+    margin-left: 4%;
+}
+
+.container .skill .detail .Personal .progress-value-commit {
+    animation: load-commit 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-commit {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.container .skill .detail .Personal .progress-value-punctual {
+    animation: load-punctual 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-punctual {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.container .skill .detail .Personal .progress-value-leader {
+    animation: load-leader 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-leader {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.container .skill .detail .Personal .progress-value-communicate {
+    animation: load-communicate 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-communicate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.container .skill .detail .Personal .progress-value-analytical {
+    animation: load-analytical 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-analytical {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.container .skill .detail .Language .language-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .skill .detail .Language .language-info span {
+    color: white;
+    margin: 10px;
+}
+
+.container .skill .detail .Language .progress {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 95%;
+    height: 30px;
+    margin-left: 4%;
+}
+
+.container .skill .detail .Language .progress-value-english {
+    animation: load-english 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-english {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.container .skill .detail .Language .progress-value-france {
+    animation: load-france 1s normal forwards;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-france {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
 }
