@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(10, 10%);
+    justify-content: center;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+input {
+    width: 60%;
+    font-size: 2rem;
+}
+
+button {
+    width: 40%;
+    font-size: 2rem;
+}
+
+#result1,
+#result2 {
+    width: 60%;
+    text-align: center;
+}
+
+.result {
+    width: 40%;
+    font-size: 2rem;
+}
+
+#input10-first,
+#input10-second {
+    width: 30%;
+}
