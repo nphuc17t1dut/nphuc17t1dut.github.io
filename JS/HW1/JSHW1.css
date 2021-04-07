@@ -1,13 +1,26 @@
 body {
     margin: 0;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
 }
 
 .container {
-    height: 100vh;
+    height: 110vh;
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: repeat(10, 10%);
     justify-content: center;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #51c2d5;
+}
+
+.input {
+    margin-left: 10px;
 }
 
 .answer {
@@ -18,26 +31,63 @@ body {
 
 input {
     width: 60%;
-    font-size: 2rem;
+    border: 1px solid black;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 90%;
 }
 
 button {
     width: 40%;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
 }
 
 #result1,
 #result2 {
     width: 60%;
     text-align: center;
+    justify-content: center;
 }
 
 .result {
     width: 40%;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ec4646;
+    opacity: 0.6;
+    word-wrap: break-word;
 }
 
 #input10-first,
 #input10-second {
     width: 30%;
+    margin: 5px;
+}
+
+.BT1,
+.BT2,
+.BT3,
+.BT4,
+.BT5,
+.BT6,
+.BT7,
+.BT8,
+.BT9,
+.BT10 {
+    border-left: 2px solid grey;
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    border-radius: 2px;
+}
+
+.BT10 {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    height: fit-content;
 }
