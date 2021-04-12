@@ -30,8 +30,16 @@ function nextChar() {
     let str = document.getElementById('input4').value;
     let strResult = "";
     for (let i = 0; i < str.length; i++) {
-        strResult += String.fromCharCode(str.charCodeAt(i) + 1);
+        let temp = str.charCodeAt(i);
+        if (((temp >= 65) && (temp <= 90)) || ((temp >= 97) && (temp <= 122))) {
+            if ((temp == 90) || (temp == 122)) {
+                strResult += String.fromCharCode(str.charCodeAt(i));
+            } else {
+                strResult += String.fromCharCode(str.charCodeAt(i) + 1);
+            }
+        } else strResult = "Mời bạn nhập ký tự trong bảng chữ cái !";
     }
+
     document.getElementById('result4').innerHTML = strResult;
 }
 //BT5
@@ -163,7 +171,7 @@ function findPrime() {
 
 function isPrime(num) {
     let result = true;
-    for (let i = 2; i < num; i++) {
+    for (let i = 2; i < Math.sqrt(num); i++) {
         if (num % i == 0) result = false;
     }
     return result;

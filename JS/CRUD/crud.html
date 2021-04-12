@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEWORK</title>
+    <link href="./crud.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebd4b55b58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Student Information</span>
+            <i class="fas fa-user"></i>
+        </div>
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div class="name">
+                <label>Name</label>
+                <input>
+            </div>
+            <div class="ID">
+                <label>ID</label>
+                <input>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div></div>
+    </div>
+
+    <script src="./crud.js"></script>
+</body>
+
+</html>

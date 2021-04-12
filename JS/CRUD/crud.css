@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #008678;
+}
+
+.header span {
+    font-size: 36px;
+    margin: 5px;
+    color: white;
+}
+
+.header i {
+    font-size: 40px;
+    margin: 5px;
+    color: white;
+}
