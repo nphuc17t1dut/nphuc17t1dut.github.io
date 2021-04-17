@@ -57,3 +57,8 @@ form .ID #idError {
     color: red;
     opacity: 0.7;
 }
+
+form .class #classError {
+    color: red;
+    opacity: 0.7;
+}

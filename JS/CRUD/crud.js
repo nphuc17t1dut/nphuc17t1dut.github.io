@@ -109,7 +109,7 @@ function Edit(el) {
     } else {
         for (let i = 0; i < data.length; i++) {
             if (data[i]["ID"] == idEdit) {
-                console.log(row.getElementsByTagName("input")[0].value);
+
                 data[i]["ID"] = row.getElementsByTagName("input")[0].value;
                 data[i]["Name"] = row.getElementsByTagName("input")[1].value;
                 data[i]["Class"] = row.getElementsByTagName("input")[2].value;
@@ -187,30 +187,49 @@ function genderCheck(gender) {
 
 function Validate() {
     let data = readFormData();
-    let nameRegex = /^[a-zA-Z].*[\s\.]*$/g;
-    let dataFromLocal = JSON.parse(localStorage.getItem("Data")) || [];
+    if (validateID(data["ID"]) && validateName(data["Name"]) && validateClass(data["Class"])) onFormSubmit();
+}
 
-    if (data["ID"] == "") {
-        document.getElementById("idError").innerHTML = "Please Input";
-    } else {
-        for (let i = 0; i < dataFromLocal.length; i++) {
-            if (dataFromLocal[i]["ID"] == data["ID"]) {
-                document.getElementById("idError").innerHTML = "Input another ID, this ID has been used !";
-                break;
-            } else {
-                document.getElementById("idError").innerHTML = "";
-            }
-        }
-    }
-    if (data["Name"] == "") {
+function validateName(data) {
+    let result = false;
+    let nameRegex = /^[a-zA-Z].*[\s\.]*$/g;
+
+    if (data == "") {
         document.getElementById("nameError").innerHTML = "Please Input";
         /*alert("Please input something");*/
-    } else if (data["Name"].length < 10) {
+    } else if (data.length < 10) {
         document.getElementById("nameError").innerHTML = "Name must contain at least 10 character!";
-    } else if (!nameRegex.test(data["Name"])) {
+    } else if (!nameRegex.test(data)) {
         document.getElementById("nameError").innerHTML = "Invalid Name";
     } else {
-        onFormSubmit();
         document.getElementById("nameError").innerHTML = "";
+        result = true;
+    }
+    return result;
+}
+
+function validateID(data) {
+    let dataFromLocal = JSON.parse(localStorage.getItem("Data")) || [];
+    if (data == "") {
+        document.getElementById("idError").innerHTML = "Please Input";
+        return false;
+    } else {
+        for (let i = 0; i < dataFromLocal.length; i++) {
+            if (dataFromLocal[i]["ID"] == data) {
+                document.getElementById("idError").innerHTML = "Input another ID, this ID has been used !";
+                return false;
+            }
+        }
+        document.getElementById("idError").innerHTML = "";
+        return true;
+    }
+}
+
+function validateClass(data) {
+    if (data == "") {
+        document.getElementById("classError").innerHTML = "Please Input";
+        return false;
+    } else {
+        return true;
     }
 }
